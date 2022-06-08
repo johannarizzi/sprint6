@@ -13,7 +13,7 @@ export interface ShowSentence {
 
 export class HomeComponent implements OnInit {
 
-  homeSentence = [
+  homeSentences = [
     {
       "id": 1,
       "text": "Nuestro héroe estaba flotando por el espacio sideral cuando a lo lejos divisó una nave espacial",
