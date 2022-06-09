@@ -12,7 +12,7 @@ export class EscenaComponent implements OnInit {
 
   @Input() sentences: ShowSentence[] = []; 
 
- currentSentence: number = 0;
+ currentSentence: number = 1;
  
 
   constructor() {
@@ -25,11 +25,11 @@ export class EscenaComponent implements OnInit {
   }
   next() {
     this.currentSentence++;
-    this.currentSentence > 3 ? (this.currentSentence = 0) : false;
+    this.currentSentence > 4 ? (this.currentSentence = 1) : false;
   }
   prev() {
     this.currentSentence--;
-    this.currentSentence < 0 ? (this.currentSentence = 3) : false;
+    this.currentSentence < 1 ? (this.currentSentence = 4) : false;
   }
 
 } 
