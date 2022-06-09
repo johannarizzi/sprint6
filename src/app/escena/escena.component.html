@@ -17,9 +17,9 @@
             </div>
             <div class='row justify-content-center'>
                 <div class="col">
-                    <p class="text" *ngFor="let sentence of sentences; let i = index"
-                    [class.notSelected]="currentSentence != i"
-                    [class.selected]="currentSentence === i" >{{sentence.text}}</p>
+                    <p class="text" *ngFor="let sentence of sentences" 
+                    [ngClass]="{'selected': (sentence.id === currentSentence), 'notSelecte': (sentence.id != currentSentence)}" 
+                    >{{sentence.text}}</p>
                 </div>
             </div>
         </div>
