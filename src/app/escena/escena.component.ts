@@ -11,12 +11,25 @@ import { Component, Input, OnInit } from '@angular/core';
 export class EscenaComponent implements OnInit {
 
   @Input() sentences: ShowSentence[] = []; 
+
+ currentSentence: number = 0;
  
 
-  constructor() { }
+  constructor() {
+    
+   }
+
 
   ngOnInit(): void {
     
+  }
+  next() {
+    this.currentSentence++;
+    this.currentSentence > 3 ? (this.currentSentence = 0) : false;
+  }
+  prev() {
+    this.currentSentence--;
+    this.currentSentence < 0 ? (this.currentSentence = 3) : false;
   }
 
 } 

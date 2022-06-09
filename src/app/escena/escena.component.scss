@@ -6,3 +6,15 @@ p{
     text-align: center;
    
 }
+.btn {
+    background-color: rgb(224, 230, 230);
+    height: 100px;
+    width: 665px;
+    border: 1px solid black;
+}
+.notSelected{
+    background-color:rgba(255, 255, 255, 0.7);
+}
+.selected{
+    background-color: pink;
+}
