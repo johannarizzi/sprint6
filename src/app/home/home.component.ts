@@ -12,6 +12,8 @@ export interface ShowSentence {
 })
 
 export class HomeComponent implements OnInit {
+  
+  public starter:boolean;
 
   homeSentences = [
     {
@@ -32,11 +34,19 @@ export class HomeComponent implements OnInit {
     }
   ];
 
-  constructor() { }
+  constructor() {
+    this.starter = false;
+   }
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
     
-  }
+    showEscena() {
+
+      this.starter = true;
+
+    }
+     
+  
 
 }
 

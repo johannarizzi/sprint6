@@ -13,11 +13,12 @@ export class EscenaComponent implements OnInit {
   @Input() sentences: ShowSentence[] = []; 
 
  currentSentence: number = 1;
+
  
 
   constructor() {
-    
-   }
+  
+     }
 
 
   ngOnInit(): void {
